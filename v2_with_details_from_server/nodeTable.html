@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i|Play+Fair:700"
+	 rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<!-- Bootstrap Data Table Plugin -->
+	<link rel="stylesheet" href="css/components/bs-datatable.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/jquery.leanModal.min.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="style1.css">
+	<style>
+		td.details-control {
+    background: url('images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('images/details_close.png') no-repeat center center;
+}
+#loginform label {
+	display : inline-block;
+	padding: 3%;
+	/* margin-top: 6%;
+	margin-bottom: 6% */
+}
+	</style>
+
+	<link rel="icon" href="images/favicon.png" type="image" sizes="16x16">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Data Tables | Host Masternode</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Top Bar
+		============================================= -->
+		<div id="top-bar" class="full-header">
+
+			<div class="container clearfix">
+
+				<div class="col_half nobottommargin clearfix">
+
+					<!-- Top Links
+					============================================= -->
+					<div class="top-links">
+						<ul>
+							<li class="mobile-hide"><a>BTC Price: <span>$ 6413.22</span></a></li>
+							<li><a>HMN Price: <span>$ 1.5</span></a></li>
+							<li><a>Masternodes: <span>778</span></a></li>
+
+						</ul>
+					</div><!-- .top-links end -->
+
+				</div>
+
+				<div class="col_half fright col_last clearfix nobottommargin">
+
+					<!-- Top Social
+					============================================= -->
+					<div id="top-social">
+						<ul>
+							<li><a href="#" class="si-github"><span class="ts-icon"><i class="icon-github-circled"></i></span><span class="ts-text">Github</span></a></li>
+							<li><a href="#" class="si-neos"><span class="ts-icon"><i class="fab fa-neos"></i></span><span class="ts-text">Neos</span></a></li>
+							<li><a href="#" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+							<li><a href="#" class="si-reddit"><span class="ts-icon"><i class="icon-reddit"></i></span><span class="ts-text">Reddit</span></a></li>
+							<li><a href="#" class="si-telegram"><span class="ts-icon"><i class="fab fa-telegram-plane"></i></span><span
+									 class="ts-text">Telegram</span></a></li>
+							<li><a href="#" class="si-discord"><span class="ts-icon"><i class="fab fa-discord"></i></span><span class="ts-text">Discord</span></a></li>
+							<li><a href="#" class="si-bitcoin"><span class="ts-icon"><i class="icon-bitcoin"></i></span><span class="ts-text">Bitcoin</span></a></li>
+						</ul>
+					</div><!-- #top-social end -->
+
+				</div>
+
+			</div>
+
+		</div><!-- #top-bar end -->
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo.png" alt="Host Masternode Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/logo.png"><img src="images/logo.png" alt="Host Masternode Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						<ul>
+							<li class="current">
+								<a href="nodeTable.html">
+									<div>Full Node</div>
+									<span>Lets Start</span>
+								</a>
+
+							</li>
+							<!-- Mega Menu
+									============================================= -->
+							<!-- .mega-menu end -->
+							<li>
+								<a href="#">
+									<div>Shared Nodes</div>
+									<span>Get In Touch</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>FAQ's</div>
+									<span>Get In Touch</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>Add Coin</div>
+									<span>Get In Touch</span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html">
+									<div>Login / Register</div>
+									<span>Get In Touch</span>
+								</a>
+							</li>
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title" class="page-title-mini">
+
+			<div class="container clearfix">
+				<h1>Clustered Data Tables</h1>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+
+					<li class="breadcrumb-item active" aria-current="page">Clustered Data Tables</li>
+				</ol>
+			</div>
+
+		</section><!-- #page-title end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+					<center><a href="#loginmodal" class="flatbtn" id="modaltrigger" style="font-size:2em">Deposit</a></center>
+
+					<div id="loginmodal" style="display:none;">
+						<h1>Deposit form</h1>
+
+						<label for="username">coin name:</label>
+						<select name="my_html_select_box" id="listderoulante" class="txtfield" tabindex="3">
+
+						</select>
+						<form id="loginform" name="loginform" method="post" action="index.html">
+							<label for="amount">Amount:</label>
+							<input type="text" name="amount" id="amount" class="txtfield" tabindex="1">
+
+							<fieldset>
+								<label>choose payout method :</label>
+								<div>
+									<input type="radio" id="reInvest" name="payoutMethod" value="reInvest">
+									<label for="reInvest">reInvest</label>
+								</div>
+								<div>
+									<input type="radio" id="wallet" name="payoutMethod" value="wallet">
+									<label for="wallet">wallet</label>
+								</div>
+							</fieldset>
+							<label for="address" id="addresslabel" style="display:none">Address:</label>
+							<input type="text" style="display:none" name="address" id="address" class="txtfield" tabindex="2">
+
+
+							<div class="center"><input type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="Log In"
+								 tabindex="4"></div>
+						</form>
+					</div>
+					<div class="table-responsive">
+
+						<table id="example" class="display" style="width:100%">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Coin Name</th>
+									<th>Address</th>
+
+								</tr>
+							</thead>
+
+						</table>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark" style="background: url('images/footer-bg.jpg') repeat; background-size: cover;">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap clearfix">
+
+					<div class="col_one_third">
+
+						<div class="widget clearfix">
+							<div class="row">
+
+								<div class="col-4 widget_links">
+									<ul>
+										<li><a href="#">Home</a></li>
+										<li><a href="#">About</a></li>
+										<li><a href="#">FAQs</a></li>
+										<li><a href="#">Support</a></li>
+
+									</ul>
+								</div>
+
+								<div class="col-4 widget_links">
+									<ul>
+										<li><a href="#">Shop</a></li>
+										<li><a href="#">Portfolio</a></li>
+										<li><a href="#">Blog</a></li>
+										<li><a href="#">Events</a></li>
+									</ul>
+								</div>
+
+								<div class="col-4 widget_links">
+									<ul>
+										<li><a href="#">Corporate</a></li>
+										<li><a href="#">Agency</a></li>
+										<li><a href="#">eCommerce</a></li>
+										<li><a href="#">Personal</a></li>
+
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col_two_third col_last">
+
+						<div class="widget clearfix">
+
+
+							<!-- <div class="line" style="margin: 30px 0;"></div> -->
+
+							<div class="col_half">
+								<div class="widget clearfix">
+
+									<div class="d-none d-lg-block">
+										<div class="clear" style="padding-top: 10px;"></div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-6 bottommargin-sm center">
+											<div class="counter counter-small" style="color: #35BBAA;"><span data-from="50" data-to="6413"
+												 data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
+											<h5 class="nobottommargin">Bitcoin Price</h5>
+										</div>
+
+										<div class="col-lg-6 bottommargin-sm center col_last">
+											<div class="counter counter-small" style="color: #2CAACA;"><span data-from="100" data-to="778"
+												 data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+											<h5 class="nobottommargin">Masternodes</h5>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col_half col_last">
+								<div class="widget subscribe-widget clearfix">
+									<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+									<div class="widget-subscribe-form-result"></div>
+									<form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
+										<div class="input-group divcenter">
+											<div class="input-group-prepend">
+												<div class="input-group-text"><i class="icon-email2"></i></div>
+											</div>
+											<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email"
+											 placeholder="Enter your Email">
+											<div class="input-group-append">
+												<button class="btn btn-success" type="submit">Subscribe</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						<!-- <div class="copyrights-menu copyright-links clearfix">
+							<a href="#">Home</a>/<a href="#">About</a>/<a href="#">Features</a>/<a href="#">Portfolio</a>/<a href="#">FAQs</a>/<a href="#">Contact</a>
+						</div> -->
+						Copyrights &copy; 2018 All Rights Reserved by Host Masternode.
+					</div>
+
+					<div class="col_half col_last tright">
+						<div class="fright clearfix">
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-gplus">
+								<i class="icon-gplus"></i>
+								<i class="icon-gplus"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-pinterest">
+								<i class="icon-pinterest"></i>
+								<i class="icon-pinterest"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-vimeo">
+								<i class="icon-vimeo"></i>
+								<i class="icon-vimeo"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-github">
+								<i class="icon-github"></i>
+								<i class="icon-github"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-yahoo">
+								<i class="icon-yahoo"></i>
+								<i class="icon-yahoo"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless nobottommargin si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+	<script src="js/jquery.js"></script>
+
+	<script src="js/plugins.js"></script>
+
+	<!-- Bootstrap Data Table Plugin -->
+	<script src="js/components/bs-datatable.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$('#datatable1').dataTable();
+		});
+		function format(callback, coin) {
+			console.log("coins from details format functions ", coin)
+			$.ajax({
+				type: 'POST',
+				url: "http://localhost:3014/coins/getCoin",
+				data: { name: coin.name },
+				dataType: "json",
+				async: true,
+				//async: false, you can use async 
+				success: function (data) {
+					console.log("data from ajax details ", data)
+					//var list = data.coins;
+					//var html = '';
+					//$.each(list, function (index, item) {
+					// var name = item.name
+					//var address = item.deposit_address
+					//create <tr> <td> with loop
+					html =
+						'<table cellpadding="5" cellspacing="0" border="0">' +
+						'<tr>'+
+						'<td>'+
+							'<button onclick="myFunction()" id="btn">click</button>'+
+						'</td>'+
+						'</tr>'+
+						'<tr id="withdrawtr">' +
+						'<td >Withdraw:</td>' +
+						'<td> <button style="background-color:#0487B9;color:white;border-radius:8%;border: 5px solid #0487B9" type="btn lg-btn">withdraw</button></td>' +
+						'</tr>' +
+						'<tr>' +
+						'</tr>' +
+						'<tr>' +
+						'<td>Balance:</td>' +
+						'<td>' + data.coin.name + '</td>' +
+						'</tr>' +
+						'<tr>' +
+						'<td>Payout Add:</td>' +
+						'<td>' + data.coin.deposit_address + '</td>' +
+						'</tr>' +
+						'<tr>' +
+						'<td>Avg Reward Time:</td>' +
+						'<td>...</td>' +
+						'</tr>' +
+						'<tr>' +
+						'<td>Amount in Queue:</td>' +
+						'<td>...</td>' +
+						'</tr>' +
+						'<tr>' +
+						'<td>Total Rewards Sent:</td>' +
+						'<td>...</td>' +
+						'</tr>' +
+						'<tr>' +
+						'<td>Total Share:</td>' +
+						'<td>...</td>' +
+						'</tr>' +
+						'</table>' +
+
+						'</div>' +
+						'<div class="col_half col_last nobottommargin">' +
+						'<table cellpadding="5" cellspacing="0" border="0">' +
+						'<thead>' +
+						'<tr>' +
+
+						'<th>Masternode No</th>' +
+						'<th>Pub Add</th>' +
+						'<th>Status</th>' +
+
+						'</tr>' +
+						'</thead>' +
+
+						'<tbody>' +
+						'<tr>' +
+						'<td>' + 'd.name' + '</td>' +
+						'<td>' + 'd.extn' + '</td>' +
+						'<td>...</td>' +
+						'</tr>' +
+						'<tr>' +
+						'<td>' + 'd.name' + '</td>' +
+						'<td>' + 'd.extn' + '</td>' +
+						'<td>...</td>' +
+						'</tr>' +
+						'<tr>' +
+						'<td>' + 'd.name' + '</td>' +
+						'<td>' + 'd.extn' + '</td>' +
+						'<td>...</td>' +
+						'</tr>' +
+						'</table>' +
+						'<table cellpadding="5" cellspacing="0" border="0">' +
+						'<thead>' +
+						'<tr>' +
+
+						'<th>Reward Time</th>' +
+						'<th>Transaction ID</th>' +
+						'<th>Amount</th>' +
+						'<th>Confirmations</th>' +
+
+						'</tr>' +
+						'</thead>' +
+
+						'<tbody>' +
+						'<tr>' +
+						'<td>' + 'd.name' + '</td>' +
+						'<td>' + 'd.extn' + '</td>' +
+						'<td>...</td>' +
+						'<td>' + 'd.extn' + '</td>' +
+						'</tr>' +
+						'<tr>' +
+						'<td>' + 'd.name' + '</td>' +
+						'<td>' + 'd.extn' + '</td>' +
+						'<td>...</td>' +
+						'<td>' + 'd.extn' + '</td>' +
+						'</tr>' +
+						'<tr>' +
+						'<td>' + 'd.name' + '</td>' +
+						'<td>' + 'd.extn' + '</td>' +
+						'<td>...</td>' +
+						'<td>' + 'd.extn' + '</td>' +
+						'</tr>' +
+						'</table>' +
+						'</div>' +
+						'</div>';
+					// });
+					callback($(html)).show();
+				},
+			});
+		}
+		$(document).ready(function () {
+			$('#modaltrigger').hide()
+			if (sessionStorage.getItem("user_token")) {
+				$('#modaltrigger').show()
+			}
+			var coins;
+			$.ajax({
+				type: "GET",
+				url: "http://localhost:3014/coins/getAllCoins",
+				dataSrc: "",  // Using our resources.json file to serve results
+				success: function (result) {
+					console.log(result);
+					coins = result.coins
+				}
+			});
+			var table = $('#example').DataTable({
+				"paging": false,
+				processing: true,
+				serverSide: true,
+
+				ajax: {
+					url: "http://localhost:3014/coins/getAllCoins",
+					type: "GET",
+					dataSrc: function (d) {
+						console.log("d = ", d.coins)
+						return d.coins
+					}
+				},
+				"columns": [
+					{
+						"className": 'details-control',
+						"orderable": false,
+						"data": null,
+						"defaultContent": ''
+					},
+					{ "data": "name" },
+					{ "data": "deposit_address" }
+				]
+			});
+
+
+
+			// Add event listener for opening and closing details
+			$('#example tbody').on('click', 'td.details-control', function () {
+
+				/* 
+				$(this).ready(function(){
+					console.log("this is ready")
+					console.log($(this))
+					console.log($("withdrawtr").attr("id"))
+				}) */
+
+				var tr = $(this).closest('tr');
+				var row = table.row(tr);
+				
+
+				if (row.child.isShown()) {
+					console.log("$(withdrawtr) is : ",$("#withdrawtr").attr("id"))
+					/* $('#example tbody').load(function(){
+						console.log("tbody loaded")
+					}) */
+					
+					// This row is already open - close it
+					row.child.hide();
+					tr.removeClass('shown');
+				} else {
+					// Open this row
+					row.child(format(row.child, row.data()));
+					console.log("row children: ",row.child)
+					tr.addClass('shown');
+					console.log(tr)
+					/* $("#withdrawtr").hide();
+				if(sessionStorage.getItem("user_token")){
+					$("#withdrawtr").show();
+				} */
+				}
+
+				
+			});
+		});
+	</script>
+	<!-- 	  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+ -->
+	<script type="text/javascript" charset="utf-8" src="js/jquery.leanModal.min.js"></script>
+
+	<script type="text/javascript">
+	function myFunction(){
+				console.log("works fine")
+			}
+			function hidewithdraw(){
+				console.log($("#withdrawtr").attr("id"))
+				$("#withdrawtr").hide()
+			}
+		$(function () {	
+			console.log("ddffd",$("#withdrawtr").attr("id"))		
+			$("#address").hide()
+			$("#addresslabel").hide()
+			$('input:radio[name=payoutMethod]').change(function () {
+				console.log("checkbox changed")
+
+				if ($("input[name='payoutMethod']:checked").val() == 'wallet') {
+					$("#address").show()
+					$("#addresslabel").show()
+				} else {
+					$("#address").hide()
+					$("#addresslabel").hide()
+				}
+			}).change();
+			$('#loginform').submit(function (e) {
+				var selectedCoin = $('#listderoulante').children("option:selected").val();
+				var amount = $("#amount").val()
+				var type = $("input[name='payoutMethod']:checked").val()
+				var username = sessionStorage.getItem("user_username");
+				if (sessionStorage.getItem("user_token")) {
+					if (selectedCoin) {
+						if (type == "wallet") {
+							var address = $("#address").val()
+							if (address) {
+								if (amount) {
+									console.log(address, amount, selectedCoin, username, type)
+									var geturl = $.ajax({
+										type: 'POST',
+										url: "http://localhost:3014/depositRequests/addDepositRequest",
+										data: {
+											user: username,
+											type: type,
+											amount: amount,
+											coin: selectedCoin,
+											address: address
+										},
+										crossDomain: true,
+										dataType: "json",
+										async: true,
+										success: function (data) {
+
+											if (data.success == true) {
+												console.log(data.msg)
+											} else {
+												console.log(data.msg)
+											}
+										}
+									});
+								}
+							}
+
+						}
+					}
+
+				}
+				console.log("button login clicked")
+				return false;
+			});
+
+			$.ajax({
+				type: "GET",
+				url: "http://localhost:3014/coins/getAllCoins",
+				dataSrc: "",
+				success: function (result) {
+					console.log(result.coins)
+					var coins = result.coins;
+					for (coin of coins) {
+						$('#listderoulante').append('<option value="' + coin.name + '">' + coin.name + '</option>');
+					}
+					$('#listderoulante').attr('disabled', false);
+				}
+			});
+
+			$('#modaltrigger').leanModal({ top: 110, overlay: 0.45, closeButton: ".hidemodal" });
+		});
+	</script>
+</body>
+
+</html>
